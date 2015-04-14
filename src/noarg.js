@@ -1,18 +1,11 @@
 /**
  * Created by Daniel on 2015-04-08.
  */
-function foo () {
-
-    function create() {
-
-        return function (n) {
-            if (n <= 1) {
-                return 1;
-            }
-            return n * arguments.callee(n - 1);
-        };
+function foo (n) {
+    if (n <= 1) {
+        return 1;
     }
-    create();
-
-    var result = foo()(5); // returns 120 (5 * 4 * 3 * 2 * 1)
+    return n * foo(n - 1);
 }
+// returns 120 (5 * 4 * 3 * 2 * 1)
+console.log(foo(5));
