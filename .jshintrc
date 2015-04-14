@@ -28,8 +28,8 @@
     "nonew": true,
     "plusplus": false,
     "quotmark": "single",
-    "strict": true,
+    "strict": false,
     "trailing": true,
     "undef": true,
-    "unused": true
+    "unused": false
 }
