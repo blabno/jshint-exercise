@@ -7,7 +7,9 @@
 </head>
 <body>
     
+
     <button class="button" onclick="main()">maxstatements</button>
+    
     <button class="button" onclick="foo(5)">noarg</button>
 
 
